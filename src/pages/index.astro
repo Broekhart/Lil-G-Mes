@@ -3,22 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Banner from "../layouts/banner/index.astro";
 ---
 
-<style>
-	.icon_flex {
-		display: flex;
-		gap: 10px;
-	}
-
-	@media only screen and (max-width: 480px) {
-		.icon_container {
-			width: 100%;
-		}
-
-		.icon_flex {
-			flex-direction: column;
-		}
-	}
-</style>
 <Layout>
 	<main>
 		<Banner
@@ -31,6 +15,21 @@ import Banner from "../layouts/banner/index.astro";
 			<div class="icon_container">
 				<a
 					href="https://www.youtube.com/watch?v=UD0-55PIbuE"
+					target="_blank"
+				>
+					<i class="fab fa-youtube" style="background-color: #ff0000">
+						YOUTUBE</i
+					>
+				</a>
+			</div>
+		</Banner>
+		<Banner image="--url: url(/8.png); background-size: cover;">
+			<h2>LIL G-MES</h2>
+			<h3>ASCOLTA EQUILIBRIO</h3>
+			<iframe src="https://www.youtube.com/embed/KkLfonVNOGw"> </iframe>
+			<div class="icon_container">
+				<a
+					href="https://www.youtube.com/watch?v=KkLfonVNOGw"
 					target="_blank"
 				>
 					<i class="fab fa-youtube" style="background-color: #ff0000">
@@ -107,3 +106,20 @@ import Banner from "../layouts/banner/index.astro";
 		</Banner>
 	</main>
 </Layout>
+
+<style>
+	.icon_flex {
+		display: flex;
+		gap: 10px;
+	}
+
+	@media only screen and (max-width: 480px) {
+		.icon_container {
+			width: 100%;
+		}
+
+		.icon_flex {
+			flex-direction: column;
+		}
+	}
+</style>
